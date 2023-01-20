@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Mieter {
     private boolean Fuehrerschein;
     private String Name;
@@ -27,8 +29,6 @@ public class Mieter {
         Alter = alter;
         Budget = budget;
     }
+    }
 
 
-
-
-}

@@ -25,15 +25,20 @@ public class Main {
     Gespraech = sc.next();
     if (Gespraech.equals("Ja")||Gespraech.equals("ja")||Gespraech.equals("True")||Gespraech.equals("true")) Fuehrerschein = true;
     System.out.print(Name+ ": ");
-    if (Fuehrerschein) System.out.println(" hier bitte."); else {
+    if (Fuehrerschein) System.out.println(" hier bitte.");
+
+    else {
     System.out.println(" Leider nein");
     System.out.println("Günther: Ohne Führerschein kann ich dir kein Auto geben!");
     return;}
     System.out.println("Günther: Für wie viele Tage möchtest du ein Auto mieten");
     System.out.print(Name + ": ");
     int tage = sc.nextInt();
+
+
     System.out.println("Günther: Wie viel Budget hast du zur Verfügung");
     System.out.print(Name + ": ");
+
     int budget = sc.nextInt();
         Mieter Mieter = new Mieter(Fuehrerschein,Name,Alter,budget);
         System.out.println(Ich+ " : Was möchste ich " + Name +" machen/wissen?");
@@ -41,6 +46,11 @@ public class Main {
         System.out.println("2. Auto mieten");
         gespraech = sc.nextInt();
         if (gespraech==1)System.out.println(Ich + " : Mein derzeitiges Budget ist: " + Mieter.getBudget());
+
+
+
+        // mietdauereingeh(tage); Aufruf mietdauer methode lucy
+
 
     }
 }
