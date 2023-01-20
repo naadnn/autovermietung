@@ -35,7 +35,12 @@ public class Main {
     System.out.println("Günther: Wie viel Budget hast du zur Verfügung");
     System.out.print(Name + ": ");
     int budget = sc.nextInt();
-
+        Mieter Mieter = new Mieter(Fuehrerschein,Name,Alter,budget);
+        System.out.println(Ich+ " : Was möchste ich " + Name +" machen/wissen?");
+        System.out.println("1. Budget wissen");
+        System.out.println("2. Auto mieten");
+        gespraech = sc.nextInt();
+        if (gespraech==1)System.out.println(Ich + " : Mein derzeitiges Budget ist: " + Mieter.getBudget());
 
     }
 }
